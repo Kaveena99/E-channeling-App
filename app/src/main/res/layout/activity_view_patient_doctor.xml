@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        app:itemBackground="@color/colorDoctorAccent"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_bottom"
+        android:layout_alignParentBottom="true" />
+
+    <include layout="@layout/custom_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ViewPetientsDoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="88dp"
+            android:text="@string/ViewPetientsDoc"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="137dp" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="136dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/SearchPatient"
+            android:layout_width="372dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#E8E8E8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="411dp"
+            android:layout_height="390dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline9"
+            app:layout_constraintVertical_bias="0.003">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewPatientDoc"
+                android:layout_width="match_parent"
+                android:layout_height="396dp" />
+
+            <!--            <TableLayout-->
+            <!--                android:id="@+id/table"-->
+            <!--                android:layout_width="393dp"-->
+            <!--                android:layout_height="173dp"-->
+            <!--                android:layout_marginHorizontal="10dp"-->
+            <!--                android:layout_marginVertical="5dp">-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientIDHis"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientIDHis"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientNameHis"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientNameHis"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientMobileHis"-->
+            <!--                        android:layout_width="80dp"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientMobileHis"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientAgeHis"-->
+            <!--                        android:layout_width="50dp"-->
+            <!--                        android:layout_height="35dp"-->
+
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientAgeHis"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        tools:ignore="DuplicateIds" />-->
+
+            <!--                    <TextView-->
+
+            <!--                        android:id="@+id/PatientSeHis"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientSeHis"-->
+            <!--                        android:textStyle="bold" />-->
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientIDHis1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginHorizontal="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientIDHis1" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientNameHis1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientNameHis1" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientMobileHis1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginEnd="1dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientMobileHis1" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientAgeHis1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:text="@string/PatientAgeHis1" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientSeHis1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:text="@string/PatientSeHis1" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientIDHis2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginHorizontal="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientIDHis2" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientNameHis2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginEnd="1dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientNameHis2" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientMobileHis2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginEnd="1dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientMobileHis2" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientAgeHis2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:text="@string/PatientAgeHis2" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientSeHis2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:text="@string/PatientSeHis2" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientIDHis3"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginHorizontal="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientIDHis3" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientNameHis3"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginEnd="1dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientNameHis3" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientMobileHis3"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginEnd="1dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PatientMobileHis3" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientAgeHis3"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:text="@string/PatientAgeHis3" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PatientSeHis3"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:text="@string/PatientSeHis3" />-->
+
+            <!--                </TableRow>-->
+
+            <!--            </TableLayout>-->
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="222dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

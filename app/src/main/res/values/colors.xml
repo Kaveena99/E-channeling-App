@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAdminPrimary">#1693e0</color>
+
+    <color name="colorAdminAccent">#f2f1eb</color>
+
+    <color name="grey">#9F2C2B2B</color>
+    <color name="blue">#0BAE9E</color>
+
+    <color name="light_black">#363434</color>
+
+    <color name="red">#eb5757</color>
+
+    <color name="introYellow">#fece2f</color>
+    <color name="light_grey">#d6d4ce</color>
+
+    <color name="back_grey">#bab1b1</color>
+    <color name="colorPatientPrimary">#6264A7</color>
+
+
+    <color name="colorPatientAccent">#1693e0 </color>
+    <color name="lightBlue">#1693e0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorDoctorPrimary">#007bc8</color>
+
+    <color name="colorDoctorAccent">#f2f1eb</color>
+    <color name= "Acceptbtn">#43AAD8</color>
+    <color name="Removebtn">#E86C6C</color>
+    <color name="colorPharmacyPrimary">#329536</color>
+    <color name="colorPrimaryDark">#000000</color> -->
+    <color name="colorPharmacyAccent">#f2f1eb</color>
+    <color name="green">#FF1E4C20</color> -->
+    <color name="dark_green">#438F46</color>
+    <color name="light_blue">#00BCD4</color>
+    <color name="light_red">#fc6565</color>
+    <color name="light_grey_table">#f1f1f1</color> -->
+</resources>

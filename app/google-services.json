@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "306656535626",
+    "firebase_url": "https://talkwithdoctor-db-93f31.firebaseio.com",
+    "project_id": "talkwithdoctor-db-93f31",
+    "storage_bucket": "talkwithdoctor-db-93f31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306656535626:android:3df52154baa24ca6cf32b3",
+        "android_client_info": {
+          "package_name": "com.example.talk_with_doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306656535626-8eeit284qi2gqsaojqffrr8ora79ufq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talk_with_doctor",
+            "certificate_hash": "281a115bf124c9a7dce45032f3e6ca54c28868a1"
+          }
+        },
+        {
+          "client_id": "306656535626-sj2knjsl9d4017ftuvfvagujeurepbkn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talk_with_doctor",
+            "certificate_hash": "a009fa75d56207bc87bbb46efa08dc0a8e0b1782"
+          }
+        },
+        {
+          "client_id": "306656535626-uduerg5e367v3ka2hqqvpt1qsuabf4f4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talk_with_doctor",
+            "certificate_hash": "f02255d5c789e3506c0a555a9da3e1c04fcddee7"
+          }
+        },
+        {
+          "client_id": "306656535626-omh7nb154mhefqv3e86fpn8krvmnbkgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talk_with_doctor",
+            "certificate_hash": "c07a1a09d4d7a2973ce7605c46ad86ea41575529"
+          }
+        },
+        {
+          "client_id": "306656535626-sr2fhitsi12qc21puembkf428hou533i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOYzakrVNnREsiU88Q_ywgqqTVSQ497rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306656535626-sr2fhitsi12qc21puembkf428hou533i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorAdminPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAdminAccent</item>
+        <item name="colorPrimary">@color/colorPatientPrimary</item>
+        <item name="colorAccent">@color/colorPatientAccent</item>
+         <item name="colorPrimary">@color/colorDoctorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorDoctorAccent</item>
+        <item name="colorPrimary">@color/colorPharmacyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPharmacyAccent</item>
+    </style>
+
+</resources>

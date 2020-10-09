@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        app:itemBackground="@color/colorDoctorAccent"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_bottom"
+        android:layout_alignParentBottom="true" />
+
+    <View
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <include layout="@layout/custom_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="59dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="135dp" />
+
+        <TextView
+            android:id="@+id/my_appoinment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="88dp"
+            android:text="@string/my_appoinment"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="413dp"
+            android:layout_height="352dp"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewMyAppoinment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--            <TableLayout-->
+            <!--                android:id="@+id/table"-->
+            <!--                android:layout_width="393dp"-->
+            <!--                android:layout_height="173dp"-->
+            <!--                android:layout_marginHorizontal="10dp"-->
+            <!--                android:layout_marginVertical="5dp">-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientIDHis"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientIDApp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientNameHis"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientNameApp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/AppoinmanetDateApp"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="#D6D4D4"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/AppoinmanetDateApp"-->
+            <!--                        android:textStyle="bold" />-->
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientIDApp1"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginHorizontal="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientIDApp1" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientNameApp1"-->
+            <!--                        android:layout_width="116dp"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientNameApp1" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/AppoinmentDateApp1"-->
+            <!--                        android:layout_width="205dp"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/AppoinmentDateApp1" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientIDApp2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginHorizontal="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientIDApp2" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientNameApp2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientNameApp2" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/AppoinmentDateApp2"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/AppoinmentDateApp2" />-->
+
+
+            <!--                </TableRow>-->
+
+            <!--                <TableRow>-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientIDApp3"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginHorizontal="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientIDApp3" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/PetientNameApp3"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/PetientNameApp3" />-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/AppoinmentDateApp3"-->
+            <!--                        android:layout_width="185dp"-->
+            <!--                        android:layout_height="35dp"-->
+            <!--                        android:layout_marginRight="1dp"-->
+            <!--                        android:layout_marginBottom="1dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:background="@color/white"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="@string/AppoinmentDateApp3" />-->
+
+            <!--                </TableRow>-->
+
+            <!--            </TableLayout>-->
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/custom_toolbar" />
+</RelativeLayout>
+
+
+

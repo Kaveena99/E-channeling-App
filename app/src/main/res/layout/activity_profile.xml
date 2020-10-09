@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        app:itemBackground="@color/colorDoctorAccent"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_bottom"
+        android:layout_alignParentBottom="true" />
+
+    <include layout="@layout/custom_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="52dp" />
+
+        <TextView
+            android:id="@+id/DoctorDetails"
+            android:layout_width="178dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="88dp"
+            android:text="@string/my_details"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="114dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="162dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="203dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="259dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="307dp" />
+
+        <TextView
+            android:id="@+id/DoctorID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/DoctorID"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+        <TextView
+            android:id="@+id/DoctorNametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/DoctorNametext"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <TextView
+            android:id="@+id/DoctorHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/DoctorHospital"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/DoctorMobile"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+        <TextView
+            android:id="@+id/DoctorCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/DoctorCategory"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+        <Button
+            android:id="@+id/Updatebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorDoctorPrimary"
+            android:text="@string/Updatebutton"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="552dp" />
+
+        <EditText
+            android:id="@+id/DoctorIDInput"
+            android:layout_width="202dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginLeft="92dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DoctorIDInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/DoctorID"
+            app:layout_constraintStart_toEndOf="@+id/DoctorID" />
+
+        <EditText
+            android:id="@+id/DoctorNameInput"
+            android:layout_width="196dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DoctorNameInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/DoctorNametext"
+            app:layout_constraintStart_toEndOf="@+id/DoctorNametext" />
+
+        <EditText
+            android:id="@+id/DoctorHosInput"
+            android:layout_width="205dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DoctorHosInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/DoctorHospital"
+            app:layout_constraintStart_toEndOf="@+id/DoctorHospital" />
+
+        <EditText
+            android:id="@+id/DoctorMobileInput"
+            android:layout_width="205dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginLeft="112dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DoctorMobileInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+        <EditText
+            android:id="@+id/DoctorCategoryInput"
+            android:layout_width="204dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DoctorCategoryInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/DoctorCategory"
+            app:layout_constraintStart_toEndOf="@+id/DoctorCategory" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="45dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/DoctorDetails"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="372dp" />
+
+        <TextView
+            android:id="@+id/DocEmail"
+            android:layout_width="113dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/DocEmail"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline37" />
+
+        <EditText
+            android:id="@+id/DocEmailInput"
+            android:layout_width="205dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DocEmailInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/DocEmail"
+            app:layout_constraintStart_toEndOf="@+id/DocEmail" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="410dp" />
+
+        <TextView
+            android:id="@+id/DocPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/DocPassword"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline38" />
+
+        <EditText
+            android:id="@+id/DocPasswordInput"
+            android:layout_width="204dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginLeft="92dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DocPasswordInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/DocPassword"
+            app:layout_constraintStart_toEndOf="@+id/DocPassword" />
+
+        <TextView
+            android:id="@+id/DocDateTime"
+            android:layout_width="119dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/DocDataTime"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline32" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="492dp" />
+
+        <EditText
+            android:id="@+id/DocDateTimeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/DocDateTimeInput"
+            app:layout_constraintBaseline_toBaselineOf="@+id/DocDateTime"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

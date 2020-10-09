@@ -1,0 +1,362 @@
+<resources>
+    <string name="app_name">Talk with Doctor</string>
+
+    <string name="btnAddDoctor">Add Doctor</string>
+    <string name="btnAddPharmacy">Add Pharmacy</string>
+    <string name="btnViewPatient">View Patient</string>
+    <string name="btnViewPharmacy">View Pharmacy</string>
+    <string name="btnViewDoctor">View Doctor</string>
+    <string name="btnViewAppointments">View Appointments</string>
+
+    <string name="txtAddDoctor">Add Doctor</string>
+    <string name="txtAddPharmacy">Add Pharmacy</string>
+    <string name="txtViewPatient">View Patient</string>
+    <string name="txtViewDoctor">View Doctor</string>
+    <string name="txtViewPharmacy">View Pharmacy</string>
+
+    <string name="txtAdmin">Admin</string>
+    <string name="btnAdmin">Admin</string>
+
+    <string name="txtPatient">Patient</string>
+    <string name="txtDoctor">Doctor</string>
+    <string name="txtPharmacy">Pharmacy</string>
+
+    <string name="txtAdminProfile">Admin Profile</string>
+
+    <string name="txtId">ID</string>
+    <string name="valIdNum">001</string>
+    <string name="valIdNum1">002</string>
+    <string name="valIdNum2">003</string>
+
+    <string name="txtPerson">Name</string>
+    <string name="valPersonName">Nimal Perera</string>
+    <string name="valPersonName1">Amal Pieris</string>
+    <string name="valPersonName2">Kamal Gamage</string>
+
+    <string name="txtEmail">Email</string>
+    <string name="valEmail">nimal@gmail.com</string>
+    <string name="valEmail1">Amal@gmail.com</string>
+    <string name="valEmail2">Kamal@gmail.com</string>
+
+    <string name="btnUpload">Update</string>
+    <string name="txtSearch">Search here</string>
+
+    <string name="btnAdd">Add</string>
+
+    <string name="txtDelete">Delete</string>
+    <string name="btnDelete">Delete</string>
+
+    <string name="txtPassword">Password</string>
+    <string name="valPassword">abc123</string>
+
+    <string name="txtAddress">Address</string>
+
+    <string name="txtMobile">Mobile</string>
+    <string name="valMobile">0715555555</string>
+    <string name="valMobile1">0779999999</string>
+    <string name="valMobile2">0713333333</string>
+
+    <string name="txtCategory">Category</string>
+    <string name="valCategory">Neurology</string>
+    <string name="valCategory1">Cardiology</string>
+    <string name="valCategory2">Dermatology</string>
+
+    <string name="txtHospital">Hospital</string>
+    <string name="valHospital">Nawaloka</string>
+    <string name="valHospital1">Asiri</string>
+    <string name="valHospital2">Lanka Hospital</string>
+
+    <string name="txtCity">City</string>
+    <string name="valCity">Kiribathgoda</string>
+    <string name="valCity1">Malabe</string>
+    <string name="valCity2">Kaduwela</string>
+
+    <string name="txtAge">Age</string>
+    <string name="valAge">30</string>
+    <string name="valAge1">35</string>
+    <string name="valAge2">40</string>
+
+    <string name="valPharmacy">MyMed</string>
+    <string name="valPharmacy1">Osu Sala</string>
+    <string name="valPharmacy2">Apco</string>
+
+    <string name="txtDateAndTimeBold">Date and Time</string>
+
+    <!-- <string name="txtTo">To: </string>
+    <string name="txtSubject">Subject</string>
+    <string name="txtRequest">Request</string>
+    <string name="txtRequestEmail">Request Email</string>
+    <string name="txtEmailAddress">admin@gmail.com</string>
+    <string name="txtBack">Back</string> -->
+
+    <string name="txtMessage">Your details should be send to us via email, by using button provided below.\n\n
+        If you are request as a doctor, please follow latter steps:\n
+        1. Enter your name, address, mobile number, category of specialization, hospital.\n
+        2. Attach your bio data and qualification certificates.\n\n
+
+        If you are request as a pharmacist, please follow latter steps:\n\n
+        1. Enter pharmacy name, city, address, name and mobile number.\n
+        2. Attach registration certificate.\n\n
+
+        Please send the details in a clear manner.
+    </string>
+    <string name="txtTalkWithDoctor">Talk With Doctor</string>
+
+
+    <string name="new_appointment_btn">New Doctor Appointment</string>
+    <string name="view_bookings_btn">View Bookings</string>
+    <string name="order_medicine_btn">Order Medicines</string>
+    <string name="user_topic_patient">Patient</string>
+    <string name="find_doctor">Find Your Doctor</string>
+    <string name="doctor_name_find">Doctor Name :</string>
+    <string name="docNameFind">Doctor Name</string>
+    <string name="specializationFind">Specialization :</string>
+
+    <string-array name="specializationList">
+        <item>Any</item>
+        <item>Allergy and Asthma Specialist</item>
+        <item>Chest Physician</item>
+        <item>Child and Adolescent Psychology</item>
+        <item>Counsellor</item>
+        <item>Dental Surgeon</item>
+        <item>General</item>
+        <item>Neurosurgeon</item>
+        <item>Physician</item>
+        <item>Surgeon</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="hospitalFind">Hospital :</string>
+    <string-array name="hospitalList">
+        <item>Any</item>
+        <item>Asiri Hospital,Colombo</item>
+        <item>Durdans Hospital,Colombo</item>
+        <item>Hemas Hospital,Wattala</item>
+        <item>Lanka Hospital,Colombo</item>
+        <item>Nawaloka Hospital,Colombo</item>
+        <item>Nevil Fernando Hospital,Malabe</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="logo_new">logo_new</string>
+    <string name="username_login">Username</string>
+    <string name="password_login">Password</string>
+    <string name="login_button1">Log In</string>
+    <string name="yetRegister">Not yet registered?</string>
+    <string name="signup">Sign Up</string>
+    <string name="pharmacyscreen">Pharmacy</string>
+    <string name="monthlyincome">Monthly Income</string>
+    <string name="viewpres">View Prescriptions</string>
+    <string name="pharmacydetails">Pharmacy Details</string>
+    <string name="pid">ID</string>
+    <string name="pname">Name</string>
+    <string name="paddress">Address</string>
+    <string name="pmobile">Mobile</string>
+    <string name="pemail">Email</string>
+    <string name="pcity">City</string>
+    <string name="pupdate">Update</string>
+    <string name="read">Read</string>
+    <string name="mincome">Monthly Income</string>
+    <string name="pview">Prescription View</string>
+    <string name="month">Month</string>
+    <string name="sales">Sales</string>
+    <string name="expences">Expences</string>
+    <string name="profit">Profit</string>
+    <string name="income">Income</string>
+    <string name="cancel">Cancel</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="imageview">Image View</string>
+    <string name="accept">Accept</string>
+    <string name="delete">Delete</string>
+    <string name="rname">Pharmacy Name</string>
+    <string name="rcity">City</string>
+    <string name="raddress">Address</string>
+    <string name="oname">Owner Name</string>
+    <string name="omobile">Owner Mobile</string>
+    <string name="oemail">Owner Email</string>
+    <string name="registerform">Registration Form</string>
+    <string name="check">I certify that the above information</string>
+    <string name="admin">Admin</string>
+    <string name="patient">Patient</string>
+    <string name="doctor">Doctor</string>
+    <string name="pha">Pharmacy</string>
+    <string name="submit">Submit</string>
+    <string name="view">View</string>
+    <string name="insertIncome">Income Insert page</string>
+    <string name="Insert">Insert Details</string>
+    <string name="pretrieve">Retrieve</string>
+
+    <string name="txtTo">To: </string>
+    <string name="txtSubject">Subject</string>
+    <string name="txtRequest">Request</string>
+    <string name="txtRequestEmail">Request Email</string>
+    <string name="txtEmailAddress">admin@gmail.com</string>
+    <string name="txtBack">Back</string>
+
+    <string name="my_details">My Details</string>
+    <string name="DoctorID">Doctor ID</string>
+    <string name="DoctorIDInput">001</string>
+    <string name="DoctorNametext">Name</string>
+    <string name="DoctorNameInput">Dr. K.D. Attapattu</string>
+    <string name="DoctorHos">Hospital</string>
+    <string name="DoctorHosInput">Nawaloka</string>
+    <string name="DoctorMobile">Mobile</string>
+    <string name="DoctorMobileInput">0715672662</string>
+    <string name="DoctorCategory">Specalication</string>
+    <string name="DoctorCategoryInput">Dental Surgeon</string>
+    <string name="DocEmail">E-mail</string>
+    <string name="DocEmailInput">xyz@gmail.com</string>
+    <string name="DocPassword">Password</string>
+    <string name="DocPasswordInput">123456</string>
+    <string name="DocDataTime"><![CDATA[Date & Time]]></string>
+    <string name="DocDateTimeInput">Every Monday</string>
+    <string name="Updatebutton">Update</string>
+
+    <string name="appoinment">Appointment</string>
+    <string name="PatientID">Patient ID</string>
+    <string name="Petient1">001</string>
+    <string name="Petient2">002</string>
+    <string name="Petient3">003</string>
+    <string name="AppoinmentDate">Appoinment Date/Time</string>
+    <string name="AppoinmentDate1">15/08/2020 10.30a.m</string>
+    <string name="AppoinmentDate2">15/08/2020 10.30a.m</string>
+    <string name="AppoinmentDate3">15/08/2020 10.30a.m</string>
+    <string name="AcceptPatient">Accept</string>
+    <string name="AcceptPetientbtn">Accept</string>
+    <string name="DeletePetient">Delete</string>
+    <string name="DeletePetientbtn">Remove</string>
+
+    <string name="notification">Notification</string>
+    <string name="PatientIDNoti">Patient ID</string>
+    <string name="PatientIDNoti1">001</string>
+    <string name="PatientIDNoti2">002</string>
+    <string name="PatientIDNoti3">003</string>
+    <string name="PatientNotification">Notification</string>
+    <string name="PatientNotification1">B.K.Perera wants to take appoinment.</string>
+    <string name="PatientNotification2">WAS De Silva wants to take appoinment.</string>
+    <string name="PatientNotification3">G.R. Fernando wants to take appoinment.</string>
+
+    <string name="my_appoinment">My Appoinments</string>
+    <string name="PetientIDApp">Patient ID</string>
+    <string name="PetientIDApp1">001</string>
+    <string name="PetientIDApp2">002</string>
+    <string name="PetientIDApp3">003</string>
+    <string name="PetientNameApp">Name</string>
+    <string name="PetientNameApp1">B.K.Perera</string>
+    <string name="PetientNameApp2">WAS De Silva</string>
+    <string name="PetientNameApp3">G.R. Fernando</string>
+    <string name="AppoinmanetDateApp">Appoinment Date/Time</string>
+    <string name="AppoinmentDateApp1">15/08/2020 10.30a.m</string>
+    <string name="AppoinmentDateApp2">15/08/2020 10.30a.m</string>
+    <string name="AppoinmentDateApp3">15/08/2020 10.30a.m</string>
+
+    <string name="view_patient">View Patient</string>
+    <string name="DoctorNotification">Notification</string>
+    <string name="add_description">Add Description</string>
+
+    <string name="ViewPetientsDoc">Patients History</string>
+    <string name="SearchPatient">Enter Patient ID</string>
+    <string name="PatientIDHis">Patient ID</string>
+    <string name="PatientIDHis1">001</string>
+    <string name="PatientIDHis2">002</string>
+    <string name="PatientIDHis3">003</string>
+    <string name="PatientNameHis">Name</string>
+    <string name="PatientNameHis1">B.K.Perera</string>
+    <string name="PatientNameHis2">WAS De Silva</string>
+    <string name="PatientNameHis3">G.R. Fernando</string>
+    <string name="PatientMobileHis">Mobile</string>
+    <string name="PatientMobileHis1">0765541515</string>
+    <string name="PatientMobileHis2">0716752431</string>
+    <string name="PatientMobileHis3">0761546278</string>
+    <string name="PatientAgeHis">Age</string>
+    <string name="PatientAgeHis1">32</string>
+    <string name="PatientAgeHis2">17</string>
+    <string name="PatientAgeHis3">64</string>
+    <string name="PatientSeHis">Sex</string>
+    <string name="PatientSeHis1">Male</string>
+    <string name="PatientSeHis2">Male</string>
+    <string name="PatientSeHis3">Male</string>
+
+
+    <string name="registration_form">Registration form</string>
+    <string name="DoctorFullName">Full Name</string>
+    <string name="DoctorFullNameInput"></string>
+    <string name="DoctorBday">Birthday</string>
+    <string name="DoctorBdayInput"></string>
+    <string name="DoctorAddressReg">Address</string>
+    <string name="DoctorAddressRegInput"></string>
+    <string name="DoctorHospital">Hospital</string>
+    <string name="DoctorHospitalInput"></string>
+    <string name="DoctorSe">Sex</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="DoctorEmail">E-mail</string>
+    <string name="DoctorEmailInput"></string>
+    <string name="DoctorMobileReg">Tel. No</string>
+    <string name="DoctorMobileRegInput"></string>
+    <string name="Specialisation">Specialisation</string>
+    <string name="SpecialisationInput"></string>
+    <string name="CheckReg">I certify that the above Information.</string>
+    <string name="SubmitReg">Submit</string>
+    <string name="Enter">Click</string>
+    <string name="edit_massage">edit_massage</string>
+
+    <string name="appointmentDate">Date :</string>
+    <string name="date_input">01-08-2020</string>
+    <string name="search_btn">Search</string>
+    <string name="doctor_details_topic">Doctor Details</string>
+    <string name="request_appointment_btn">Request an Appointment</string>
+    <string name="patientDetails_topic">Patient Details</string>
+    <string name="pName_input">Name :</string>
+    <string name="pAge_input">Age :</string>
+    <string name="pPhone_input">Phone :</string>
+    <string name="pEmail_input">Email :</string>
+    <string name="pId_input">National ID :</string>
+    <string name="send_request_btn">Send Request</string>
+    <string name="myDetails_topic">My Details</string>
+    <string name="pName">Name :</string>
+    <string name="pID">Patient ID :</string>
+    <string name="pAddress">Address :</string>
+    <string name="pMobile">Mobile :</string>
+    <string name="pEmail">Email :</string>
+    <string name="P_update_btn">Update</string>
+    <string name="signup_patient">Sign Up</string>
+    <string name="pSignup_btn">Sign Up</string>
+    <string name="p_Password">Password :</string>
+    <string name="patientNotifications">Notifications</string>
+    <string name="OrderMedi_topic">Order Medicines</string>
+    <string name="pharmacyName_insert">Pharmacy Name</string>
+    <string name="mobileN">Mobile Number</string>
+    <string name="upload">Upload Prescription :</string>
+    <string name="request_order_btn">Request Order</string>
+    <string name="bookings_topic">Bookings</string>
+    <string name="table_col1">Doctor Name</string>
+    <string name="table_col2">Date</string>
+    <string name="table_col3">Time</string>
+    <string name="table_col4">Hospital</string>
+    <string name="sample_doc_name">Dr. Colvin Samarasinghe</string>
+    <string name="sampale_date">20-08-2020</string>
+    <string name="sample_time">5 p.m - 8 p.m.</string>
+    <string name="sample_hos">Nawaloka Hospital,Colombo</string>
+    <string name="sample2_doc">Dr.Perera</string>
+    <string name="sample2_date">18-08-2020</string>
+    <string name="sampl2_time">4 p.m.</string>
+    <string name="sample2_hos">Asiri Hospital</string>
+    <string name="sample3_doc">Dr.Silva</string>
+    <string name="Sample3_date">10-08-2020</string>
+    <string name="sample3_time">2 p.m. - 4 p.m.</string>
+    <string name="sample3_hos">Nawaloka Hospital</string>
+    <string name="sample_specialization">Neurosurgeon</string>
+    <string name="sample_noti1">Dr.Colvin Samarasinghe has confirmed your request appoinment</string>
+    <string name="sample_noti2">Asiri pharmacy has confirmed you medicine order</string>
+    <string name="Sample_noti3">Sethsiri pharmacy has ignored your medicine order</string>
+    <string name="sample_Pid">0012</string>
+    <string name="Sample_pName">H.S. Adikari</string>
+    <string name="sample_pAddress">No.12, New road, Kandy</string>
+    <string name="sample_pMobile">0778954123</string>
+    <string name="sample_pEmail">adikari@gmail.com</string>
+    <string name="choose_photo">Choose Photo</string>
+
+</resources>
